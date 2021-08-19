@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+body {
+  background-color: #f1ecc3;
+}
+
+h1 {
+  text-align: left;
+  color: #515e63;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: #e5e4e2;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.6rem;
+  border: 1.4px solid black;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
