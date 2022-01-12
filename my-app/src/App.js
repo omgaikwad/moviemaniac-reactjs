@@ -4,30 +4,30 @@ import "./index.css";
 const movieDataBase = {
   drama: [
     { name: "The Shawshank Redemption", rating: "9.3/10" },
-    { name: "Fight Club", rating: "8.8/10" }
+    { name: "Fight Club", rating: "8.8/10" },
   ],
 
   crime: [
     { name: "The Godfather Trilogy", rating: "9.2/10" },
-    { name: "The Departed", rating: "8.5/10" }
+    { name: "The Departed", rating: "8.5/10" },
   ],
 
   thriller: [
     { name: "The Prestige", rating: "8.5/10" },
-    { name: "Shutter Island", rating: "8.2/10" }
+    { name: "Shutter Island", rating: "8.2/10" },
   ],
 
   comedies: [
     { name: "The Hangover Trilogy", rating: "7.7/10" },
-    { name: "Euro Trip", rating: "6.6/10" }
-  ]
+    { name: "Euro Trip", rating: "6.6/10" },
+  ],
 };
 
 export default function App() {
-  var [selectedGenre, setGenre] = useState("comedies");
-  function genreClickHandler(genre) {
+  let [selectedGenre, setGenre] = useState("comedies");
+  const genreClickHandler = (genre) => {
     setGenre(genre);
-  }
+  };
   return (
     <div className="App">
       <h1>moviemaniac🎬</h1>
@@ -36,14 +36,14 @@ export default function App() {
       </p>
       <span
         style={{
-          fontSize: "smaller"
+          fontSize: "smaller",
         }}
       >
         developed using ReactJS by{" "}
         <a
           style={{
             textDecoration: "none",
-            color: "#515e63"
+            color: "#515e63",
           }}
           href="https://twitter.com/OmGaikwad_"
         >
@@ -66,7 +66,7 @@ export default function App() {
                 margin: "1rem 0rem",
                 padding: "1rem",
                 width: "70%",
-                borderRadius: "0.5rem"
+                borderRadius: "0.5rem",
               }}
             >
               <div style={{ fontSize: "larger" }}> {movie.name} </div>
@@ -78,4 +78,3 @@ export default function App() {
     </div>
   );
 }
-
